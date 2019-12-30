@@ -1,6 +1,6 @@
 
 
-with open("nlp_tarea2_preds.txt", "r") as file:
+with open("nlp_tarea2.txt", "r") as file:
     labels = []
     for line in file:
         labels.append(line.strip())
@@ -8,7 +8,7 @@ with open("nlp_tarea2_preds.txt", "r") as file:
 
 # breakpoint()
 with open("data/test_NER_esp.txt", "r") as in_file:
-    with open("prediction.txt", "w") as out_file:
+    with open("predictions.txt", "w") as out_file:
         labels = iter(labels)
         for line in in_file:
             if line == "\n":
